@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "多平台票务提醒助手",
+    "slug": "multi-platform-ticket-alert-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "scheme": "ticketalert",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.multiplatformticketalert",
+      "infoPlist": {
+        "NSUserNotificationUsageDescription": "用于发送开票倒计时和页面关键词变化提醒。"
+      }
+    },
+    "android": {
+      "package": "com.example.multiplatformticketalert",
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#176B5D",
+          "defaultChannel": "ticket-alerts",
+          "enableBackgroundRemoteNotifications": false
+        }
+      ]
+    ],
+    "extra": {
+      "compliance": "reminder-only-no-login-no-order-no-cookie-no-captcha-bypass"
+    }
+  }
+}
