@@ -1,0 +1,16 @@
+[project]
+name = "maoyan-ticket-alert"
+version = "0.1.0"
+description = "合法合规的猫眼演出票务余票提醒桌面助手"
+requires-python = ">=3.10"
+dependencies = [
+  "PyQt6>=6.6",
+  "requests>=2.31",
+  "beautifulsoup4>=4.12",
+]
+
+[project.optional-dependencies]
+build = ["pyinstaller>=6.0"]
+
+[tool.pyinstaller]
+name = "猫眼余票提醒助手"

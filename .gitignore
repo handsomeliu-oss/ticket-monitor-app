@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+build/
+*.spec.bak
+~/.maoyan_ticket_alert/
+node_modules/
+mobile_app/.expo/
+cloud_backend/data/
